@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+    color: #333;
+    line-height: 1.7;
+}
+
+.hero {
+    height: 100vh;
+    background: url("https://wallpapers.com/images/high/abdul-kalam-hd-flags-c2bis1wavionerxt.webp")
+        center/cover no-repeat;
+}
+
+.hero-overlay {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    color: white;
+    /* padding: 20px; */
+    padding: 0px 20px 180px;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.hero p {
+    /* margin: 12px 0; */
+    font-size: 1.1rem;
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.about-left, .about-right {
+    flex: 1;
+}
+
+.about-right img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    border: 3px solid #283593;
+    transition: transform 0.3s ease;
+}
+
+.about-right img:hover {
+    transform: scale(1.03);
+}
+
+@media(min-width: 768px) {
+    .about {
+        flex-direction: row;
+        gap: 50px;
+    }
+}
+
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 90px 20px;
+    
+}
+/* .section:not(:first-child) {
+  border-top: 1px solid #e0e0e0;
+} */
+
+
+h2 {
+    color: #283593;
+    margin-bottom: 15px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-card {
+    background: white;
+    border-left: 5px solid #283593;
+    padding: 18px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateX(6px);
+}
+
+.year {
+    font-weight: 700;
+    color: #283593;
+}
+
+.achievements .achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.achievement-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-6px);
+}
+
+.achievement-card h3 {
+    color: #283593;
+    margin-bottom: 10px;
+}
+.links {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.links:focus-visible {
+    outline: 2px solid #283593;
+    outline-offset: 4px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+}
+
+.book-card h3 {
+    color: #283593;
+    margin-bottom: 10px;
+}
+
+.quote-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.quote-box {
+    background: #283593;
+    color: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 700px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.quote-box::before {
+  content: "“";
+  font-size: 4rem;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  opacity: 0.2;
+}
+
+footer {
+    background: #283593;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 0.9rem;
+}
+
+
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 3.6rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+}
